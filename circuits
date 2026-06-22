@@ -1,0 +1,111 @@
+## Complete ESP32 Bare Module Pin Map — All Components
+
+### Motor Driver — TB6681FNG
+
+| ESP32 GPIO | TB6681FNG Pin |
+|---|---|
+| GPIO25 | AIN1 |
+| GPIO26 | AIN2 |
+| GPIO32 | PWMA |
+| GPIO27 | BIN1 |
+| GPIO14 | BIN2 |
+| GPIO33 | PWMB |
+| GPIO12 | STBY |
+
+---
+
+### 16CH Mux — CD74HC4067PWR
+
+| ESP32 GPIO | CD74HC4067 Pin |
+|---|---|
+| GPIO5 | S0 (pin 10) |
+| GPIO18 | S1 (pin 11) |
+| GPIO19 | S2 (pin 14) |
+| GPIO21 | S3 (pin 13) |
+| GPIO34 | SIG/IO (pin 1) |
+| GND | E# (pin 15) |
+
+---
+
+### OLED — SSD1306 I2C
+
+| ESP32 GPIO | OLED Pin |
+|---|---|
+| GPIO22 | SCL |
+| GPIO13 | SDA |
+| 3.3V | VCC |
+| GND | GND |
+
+---
+
+### 4 Push Buttons
+
+| ESP32 GPIO | Button | Other Leg |
+|---|---|---|
+| GPIO15 | BTN1 | GND |
+| GPIO2 | BTN2 | GND |
+| GPIO4 | BTN3 | GND |
+| GPIO16 | BTN4 | GND |
+
+---
+
+### Buzzer
+
+| ESP32 GPIO | Buzzer |
+|---|---|
+| GPIO17 | Signal (+) |
+| GND | GND (–) |
+
+---
+
+### Programming Pins (BOOT & RST)
+
+| ESP32 Pin | Connection |
+|---|---|
+| GPIO0 | 10kΩ → 3.3V + BOOT button → GND |
+| EN | 10kΩ → 3.3V + RST button → GND |
+| GPIO1 (TX) | Dev board RX0 |
+| GPIO3 (RX) | Dev board TX0 |
+
+---
+
+### Power
+
+| ESP32 Pin | Connect To |
+|---|---|
+| 3V3 | 3.3V (AMS1117-3.3) |
+| GND | Common GND |
+
+---
+
+### Full GPIO Summary
+
+| GPIO | Used For |
+|---|---|
+| GPIO2 | BTN2 ⚠️ strapping pin |
+| GPIO4 | BTN3 |
+| GPIO5 | Mux S0 |
+| GPIO12 | TB6681 STBY |
+| GPIO13 | OLED SDA |
+| GPIO14 | BIN2 |
+| GPIO15 | BTN1 |
+| GPIO16 | BTN4 |
+| GPIO17 | Buzzer |
+| GPIO18 | Mux S1 |
+| GPIO19 | Mux S2 |
+| GPIO21 | Mux S3 |
+| GPIO22 | OLED SCL |
+| GPIO25 | AIN1 |
+| GPIO26 | AIN2 |
+| GPIO27 | BIN1 |
+| GPIO32 | PWMA |
+| GPIO33 | PWMB |
+| GPIO34 | Mux SIG (input only) |
+| GPIO0 | BOOT button |
+| GPIO1 | TX (UART) |
+| GPIO3 | RX (UART) |
+
+---
+
+### Free GPIOs Remaining
+GPIO23, GPIO35, GPIO36, GPIO39 (all input only: 35/36/39)
