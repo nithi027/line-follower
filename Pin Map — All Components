@@ -18,11 +18,11 @@
 
 | ESP32 GPIO | CD74HC4067 Pin |
 |---|---|
-| GPIO5 | S0 (pin 10) |
-| GPIO18 | S1 (pin 11) |
-| GPIO19 | S2 (pin 14) |
-| GPIO21 | S3 (pin 13) |
-| GPIO34 | SIG/IO (pin 1) |
+| GPIO5 | S0 |
+| GPIO18 | S1 |
+| GPIO19 | S2 |
+| GPIO21 | S3) |
+| GPIO34 | SIG |
 | GND | E# |
 
 ---
